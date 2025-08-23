@@ -284,11 +284,8 @@ Object.assign(translations.am, {
 
 
 // Initialize language switching and persist selection
-(function() {
+document.addEventListener('partialsLoaded', () => {
   const buttons = document.querySelectorAll('.lang-switch button');
-  // Default to Russian (ru) if no language was stored. This ensures RU is the primary
-  // language on first visit. Users can still switch to EN or AM via the language
-  // buttons, and the choice is persisted in localStorage.
   let currentLang = localStorage.getItem('osio-lang') || 'ru';
   function applyLang(lang) {
     currentLang = lang;
@@ -309,7 +306,14 @@ Object.assign(translations.am, {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
   applyLang(currentLang);
-})();
+
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav a').forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+});
 
 // Modal functions
 function showModal(id) {
