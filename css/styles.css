@@ -278,10 +278,6 @@ footer {
   margin: 0;
 }
 
-.faq-heading .faq-dot {
-  color: var(--primary-red);
-}
-
 .faq-content {
   flex: 1;
 }
