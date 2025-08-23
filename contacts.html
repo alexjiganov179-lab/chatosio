@@ -11,8 +11,20 @@
 
     <section class="section">
       <h2 data-i18n="nav_contacts">Contacts</h2>
-      <script async src="https://framer.com/m/UnicornStudioEmbed-wWy9.js"></script>
-      <div id="unicorn-studio-embed"></div>
+      <div data-us-project="6I8iJn5ajts3NdIDG9pP" style="width:1440px; height: 900px"></div>
+      <script type="text/javascript">
+        !function () {
+          if (!window.UnicornStudio) {
+            window.UnicornStudio = { isInitialized: !1 };
+            var i = document.createElement("script");
+            i.src = "https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js";
+            i.onload = function () {
+              window.UnicornStudio.isInitialized || (UnicornStudio.init(), window.UnicornStudio.isInitialized = !0);
+            };
+            (document.head || document.body).appendChild(i);
+          }
+        }();
+      </script>
       <p data-i18n="contacts_intro">If you have any questions, please reach out using the following channels:</p>
       <ul>
         <li data-i18n="contacts_email">Email: <a href="mailto:osio@osio.ru">osio@osio.ru</a></li>
