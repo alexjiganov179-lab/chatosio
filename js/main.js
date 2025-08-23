@@ -45,6 +45,34 @@ const translations = {
     warranty_title: 'Гарантия и сервис',
     warranty_p1: 'Мы уверены в нашей продукции. Помимо горячей линии и онлайн‑чата, OSiO открывает специализированный сервисный центр в самом сердце Аддис‑Абебы. Новый офис будет располагаться в здании Medhane Alem и обеспечит круглосуточную поддержку и ремонт всех устройств OSiO.',
     warranty_p2: 'По вопросам гарантии сначала свяжитесь с нами через Telegram или электронную почту. Мы поможем с диагностикой и при необходимости организуем ремонт или замену.',
+    about_page_title: 'О бренде – OSiO',
+    about_title: 'О бренде OSiO',
+    about_p1: 'OSiO — технологический бренд из России, производящий ноутбуки, моноблоки и мини‑ПК. Мы совмещаем современный дизайн с надежностью и даем возможность обновлять устройство без потери гарантии. Продукция выпускается на собственной фабрике под Казанью и проходит строгие испытания.',
+    about_p2: 'Миссия: мы создаем качественную технику для вашего комфорта и удобства. Ценности: надежность, простота, прозрачность и забота о пользователях.',
+    about_p3: 'Наши уникальные преимущества включают возможность модернизации компонентов без потери гарантии, оперативную поддержку через чат‑бот на сайте и в Telegram, поддержку локальных платежных систем и криптовалют (Chapa в Эфиопии) и производство на заводе ICL, известном своими научными достижениями.',
+    about_history_title: 'История и философия',
+    about_history_p1: 'OSiO вырос из 30‑летнего инженерного наследия компании ICL Technologies. Мы стремимся создавать доступные, долговечные и вдохновляющие устройства. Наша философия проста: технологии должны служить людям, помогать им учиться, создавать и развиваться. Такой подход лежит в основе линеек BaseLine и CyberLine.',
+    about_factory_title: 'Наше производство',
+    about_factory_p1: 'Все устройства OSiO собираются на нашей собственной фабрике под Казанью, где сосредоточены исследования и инновации. Мы проводим стресс‑тесты до 72 часов для обеспечения надежности, а инженеры постоянно совершенствуют производственные процессы по международным стандартам.',
+    about_team_title: 'Команда',
+    about_team_intro: 'За OSiO стоит разнообразная команда специалистов. Мы ценим прозрачность и открытость, поэтому представляем нашу основную команду. Фотографии пока заменены заглушками — их можно заменить позже.',
+    team_ceo: 'Генеральный директор',
+    team_cto: 'Технический директор',
+    team_pm: 'Продукт‑менеджер',
+    team_support: 'Руководитель поддержки',
+    team_marketing: 'Маркетолог',
+    team_engineer: 'Инженер по аппаратному обеспечению',
+    b2b_page_title: 'B2B и B2G – OSiO',
+    b2b_title: 'Сотрудничество B2B и B2G',
+    b2b_p1: 'OSiO готова к партнёрству с бизнесом и государственными организациями. Помимо ноутбуков мы предлагаем моноблоки, мини‑ПК и мониторы. Мы адаптируем продукты и услуги к местной инфраструктуре и требованиям проекта, обеспечивая плавный запуск и поддержку в развивающихся странах, таких как Эфиопия.',
+    b2b_p2: 'Если вы представляете компанию или госструктуру и хотите обсудить сотрудничество, напишите на <a href="mailto:b2b@osio.ru">b2b@osio.ru</a>. Наша команда подготовит персональное предложение и поможет с логистикой, оплатой и послепродажным сервисом.',
+    b2b_p3: 'Мы стремимся к долгосрочному партнёрству, чтобы вместе ускорять цифровую трансформацию.',
+    contacts_page_title: 'Контакты – OSiO',
+    contacts_intro: 'Если у вас есть вопросы, свяжитесь с нами через следующие каналы:',
+    contacts_email: 'Email: <a href="mailto:osio@osio.ru">osio@osio.ru</a>',
+    contacts_phone: 'Телефон: <a href="tel:+78002011178">8 (800) 201‑11‑78</a>',
+    contacts_telegram: 'Telegram: <a href="https://t.me/OSiOSiOSiO_bot" target="_blank">@OSiOSiOSiO_bot</a>',
+    contacts_outro: 'Наша команда поддержки всегда готова помочь!',
     faq_heading: 'Часто задаваемые вопросы',
   },
   en: {
@@ -92,6 +120,34 @@ const translations = {
     warranty_title: "Warranty & Service",
     warranty_p1: "We stand behind our products. In addition to our hotline and online chat, OSiO is opening a dedicated service center in the heart of Addis Ababa. The new office will be located at Medhane Alem Building and will offer 24/7 support and repair services for all OSiO devices.",
     warranty_p2: "For any warranty claims, please contact us first via Telegram or email. We will assist you with troubleshooting and arrange repair or replacement if necessary.",
+    about_page_title: "About OSiO",
+    about_title: "About OSiO",
+    about_p1: "OSiO is a technology brand from Russia that produces laptops, all‑in‑one PCs and mini‑PCs. We combine modern design with reliability and give you the freedom to upgrade your device without losing your warranty. Our products are manufactured at our own factory under Kazan, and every unit undergoes rigorous testing to ensure quality.",
+    about_p2: "Mission: We create high‑quality equipment for your comfort and convenience. Values: Reliability, simplicity, transparency and care for our users.",
+    about_p3: "Our unique advantages include the ability to upgrade components without voiding the warranty, responsive customer support with a chat‑bot directly on the site and via Telegram, support for local payment systems and cryptocurrencies (Chapa in Ethiopia) and manufacturing at the ICL factory renowned for its scientific achievements.",
+    about_history_title: "History & Philosophy",
+    about_history_p1: "OSiO emerged from the 30‑year engineering heritage of ICL Technologies. We set out to create devices that are accessible, durable and inspiring. Our philosophy is simple: technology should serve people, empower them to learn, create and grow. This mindset drives our product lines from BaseLine to CyberLine.",
+    about_factory_title: "Our Factory",
+    about_factory_p1: "All OSiO devices are assembled at our own factory near Kazan, a place steeped in research and innovation. We operate stress tests up to 72 hours to ensure reliability, and our engineers constantly refine production processes to meet international standards.",
+    about_team_title: "Team",
+    about_team_intro: "Behind OSiO stands a diverse team of specialists. We value transparency and openness, so here is our core team. Photos are replaced with placeholders—you can replace them later.",
+    team_ceo: "Chief Executive Officer",
+    team_cto: "Chief Technology Officer",
+    team_pm: "Product Manager",
+    team_support: "Support Lead",
+    team_marketing: "Marketing Manager",
+    team_engineer: "Hardware Engineer",
+    b2b_page_title: "B2B & B2G – OSiO",
+    b2b_title: "B2B & B2G Collaboration",
+    b2b_p1: "OSiO is ready to partner with businesses and government organisations. In addition to laptops, we offer all‑in‑one computers, mini‑PCs and monitors. We adapt our products and services to local infrastructure and project requirements, ensuring smooth deployment and support in developing countries like Ethiopia.",
+    b2b_p2: "If you represent a company or public sector organisation and want to discuss cooperation, please send a message to <a href=\"mailto:b2b@osio.ru\">b2b@osio.ru</a>. Our team will reply with a personalised offer and assist with logistics, payment and after‑sales service.",
+    b2b_p3: "We look forward to building long‑term partnerships to accelerate digital transformation together.",
+    contacts_page_title: "Contacts – OSiO",
+    contacts_intro: "If you have any questions, please reach out using the following channels:",
+    contacts_email: "Email: <a href=\"mailto:osio@osio.ru\">osio@osio.ru</a>",
+    contacts_phone: "Phone: <a href=\"tel:+78002011178\">8 (800) 201‑11‑78</a>",
+    contacts_telegram: "Telegram: <a href=\"https://t.me/OSiOSiOSiO_bot\" target=\"_blank\">@OSiOSiOSiO_bot</a>",
+    contacts_outro: "Our support team is always ready to assist you!",
     faq_heading: "Frequently Asked Questions",
   },
   am: {
@@ -139,6 +195,34 @@ const translations = {
     warranty_title: "ዋስትና እና አገልግሎት",
     warranty_p1: "ምርቶቻችንን እናምናለን። ከሞተላይንና ከመስመር ላይ ውይይት በተጨማሪ፣ OSiO በአዲስ አበባ ልብ ውስጥ ልዩ አገልግሎት ማዕከል ትከፍታለች። አዲሱ ቢሮ በ Medhane Alem Building ውስጥ ይገኛል እና ለሁሉም OSiO መሣሪያዎች 24/7 ድጋፍና ጥገና አገልግሎት ይሰጣል።",
     warranty_p2: "ለማንኛውም ዋስትና ጥያቄ እባክዎን መጀመርያ በ Telegram ወይም በኢሜይል ይያዙን። ችግኝ ማስወገድ እና እንዲያስፈልግ ጥገና ወይም ቀይር እንደሚያደርጉ እናግዛዎታለን።",
+    about_page_title: "ስለ OSiO – OSiO",
+    about_title: "ስለ OSiO",
+    about_p1: "OSiO ከሩሲያ የሚመጣ የቴክኖሎጂ ስም ሲሆን ላፖቶች፣ ኦል-ኢን-ዋን ኮምፒዩተሮች እና ሚኒ-ፒሲዎችን ይሠራል። ዘመናዊ ዲዛይንን ከታማኝነት ጋር እንጣጣም እና ከዋስትና በማይወጣ የመዘመን እድል እንሰጣለን። ምርቶቻችን በካዛን አቅራቢያ ያለ በራሳችን ፋብሪካ ላይ ይሰበሰባሉ እና ሁሉም አካላት በጥራት ለማረጋገጥ ከፍተኛ ሙከራ ይደርሳቸዋል።",
+    about_p2: "ተልዕኮ: ለእርስዎ ጥራታማ ሞርቶችን እና ቀላል መጠቀሚያዎችን እንፈጥራለን። እሴቶች: ታማኝነት፣ ቀላልነት፣ ግልጽነት እና ለተጠቃሚዎቻችን እንክብካቤ።",
+    about_p3: "የልዩ ጥቅሞቻችን የካምፓናዎችን ክፍሎች ከዋስትና በማታወጣ ማሻሻል፣ በቦታው እና በቴሌግራም የሚሰራ የድጋፍ ቻት-ቦት፣ የአካባቢ ክፍያ ስርአቶችንና ክሪፕቶከረንሲን (በኢትዮጵያ Chapa) ድጋፍ እና በ ICL ፋብሪካ ላይ ማመንጨት ናቸው።",
+    about_history_title: "ታሪክ እና ፍላጎት",
+    about_history_p1: "OSiO ከ ICL Technologies 30 ዓመታት የኢንጂነር ተሞክሮ ውስጥ ተወለደ። ማቀናበር ለሁሉም ተደራሽ፣ ጠንካራ እና የሚያበረታታ መሣሪያ እንፈጥራለን። ፍላጎታችን ቀላል ነው፤ ቴክኖሎጂ ሰዎችን መገልገል አለበት፣ ማስተላለፍ እንዲችሉ፣ መፍጠር እና መድገም እንዲያደርጉ። ይህ አመራር ከ BaseLine እስከ CyberLine ምርቶቻችንን ይመራል።",
+    about_factory_title: "ፋብሪካችን",
+    about_factory_p1: "ሁሉም የ OSiO መሣሪያዎች በካዛን አቅራቢያ ባለ የኛ ራስ ፋብሪካ ላይ ይሰበሰባሉ፤ ይህ ቦታ በምርምር እና በኢኖቬሽን የተሞላ ነው። እስከ 72 ሰዓት የሚቆይ የግፊት ሙከራ እንካሄዳለን ለታማኝነት ለማረጋገጥ፣ እና ኢንጂነሮቻችን ዓለም አቀፍ መደበኛዎችን ለማሟላት ሂደቶችን ያሻሽላሉ።",
+    about_team_title: "ቡድናችን",
+    about_team_intro: "OSiOን የሚደግፉ የተለያዩ ሙያዎች አባላት ናቸው። ግልጽነትን እና ክፍትነትን እናደርጋለን፣ ስለዚህ ዋና ቡድናችንን እናቀርባለን። ፎቶዎቹ በማገጃ ተተካሉ — በኋላ መቀየር ትችላላችሁ።",
+    team_ceo: "ዋና አስተዳዳሪ",
+    team_cto: "የቴክኖሎጂ አስተዳዳሪ",
+    team_pm: "የምርት አስተዳዳሪ",
+    team_support: "የድጋፍ ኃላፊ",
+    team_marketing: "የገቢዎች አስተዳዳሪ",
+    team_engineer: "የሃርድዌር መሐንዲስ",
+    b2b_page_title: "B2B & B2G – OSiO",
+    b2b_title: "የ B2B እና B2G ስራም",
+    b2b_p1: "OSiO ከንግድ እና ከመንግስት ድርጅቶች ጋር ለመተባበር ዝግጁ ነው። ከላፖቶች በተጨማሪ ኦል-ኢን-ዋን ኮምፒዩተሮች፣ ሚኒ-ፒሲዎች እና ሞኒተሮችን እንሰጣለን። ምርቶቻችንንና አገልግሎቶቻችንን ከአካባቢ ኢንፍራስትራክቸር እና ከፕሮጀክት መስፈርቶች ጋር እናዋሃዳለን፣ በኢትዮጵያ ያሉ እየደገፉ ሀገራት ውስጥ ቀላል ማስጀመር እና ድጋፍ እንዲገኝ እንጠብቃለን።",
+    b2b_p2: "ኩባንያ ወይም የህዝብ ዘርፍ ድርጅት ከሆኑ እና ስለ ተባባሪነት መወያየት ከፈለጉ፣ ወደ <a href=\"mailto:b2b@osio.ru\">b2b@osio.ru</a> መልእክት ይላኩ። ቡድናችን የተግባር አቅርቦት በመስጠት ከሎጂስቲክስ፣ ክፍያ እና ከሽያጭ በኋላ አገልግሎት ጋር ይረዳዎታል።",
+    b2b_p3: "በጋራ የዲጂታል ለውጥን ለማፋጠን ረጅም ጊዜ የሚቆይ ህብረት ለመገንባት እንጠበቃለን።",
+    contacts_page_title: "እውቂያዎች – OSiO",
+    contacts_intro: "ጥያቄ ካለዎት በሚከተሉት መንገዶች እባክዎን ያግኙን:",
+    contacts_email: "ኢሜይል: <a href=\"mailto:osio@osio.ru\">osio@osio.ru</a>",
+    contacts_phone: "ስልክ: <a href=\"tel:+78002011178\">8 (800) 201‑11‑78</a>",
+    contacts_telegram: "ቴሌግራም: <a href=\"https://t.me/OSiOSiOSiO_bot\" target=\"_blank\">@OSiOSiOSiO_bot</a>",
+    contacts_outro: "የድጋፍ ቡድናችን ሁልጊዜ ለማገዝ ዝግጁ ነው!",
     faq_heading: "ተደጋጋሚ ጥያቄዎች",
 
     // FAQ translations (Russian)
@@ -284,32 +368,41 @@ Object.assign(translations.am, {
 
 
 // Initialize language switching and persist selection
-(function() {
-  const buttons = document.querySelectorAll('.lang-switch button');
-  // Default to Russian (ru) if no language was stored. This ensures RU is the primary
-  // language on first visit. Users can still switch to EN or AM via the language
-  // buttons, and the choice is persisted in localStorage.
-  let currentLang = localStorage.getItem('osio-lang') || 'ru';
-  function applyLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('osio-lang', lang);
-    buttons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.lang === lang);
-    });
-    document.documentElement.setAttribute('lang', lang);
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const value = translations[lang] && translations[lang][key];
-      if (value) {
-        el.innerHTML = value;
-      }
-    });
-  }
-  buttons.forEach(btn => {
+let currentLang = localStorage.getItem('osio-lang') || 'ru';
+
+function applyLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('osio-lang', lang);
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const value = translations[lang] && translations[lang][key];
+    if (value) {
+      el.innerHTML = value;
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLang(currentLang);
+});
+
+document.addEventListener('partialsLoaded', () => {
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
   applyLang(currentLang);
-})();
+
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('nav a').forEach(link => {
+    if (link.getAttribute('href') === currentPage) {
+      link.classList.add('active');
+    }
+  });
+});
 
 // Modal functions
 function showModal(id) {
