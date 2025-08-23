@@ -284,25 +284,30 @@ Object.assign(translations.am, {
 
 
 // Initialize language switching and persist selection
+let currentLang = localStorage.getItem('osio-lang') || 'ru';
+
+function applyLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('osio-lang', lang);
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    const value = translations[lang] && translations[lang][key];
+    if (value) {
+      el.innerHTML = value;
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLang(currentLang);
+});
+
 document.addEventListener('partialsLoaded', () => {
-  const buttons = document.querySelectorAll('.lang-switch button');
-  let currentLang = localStorage.getItem('osio-lang') || 'ru';
-  function applyLang(lang) {
-    currentLang = lang;
-    localStorage.setItem('osio-lang', lang);
-    buttons.forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.lang === lang);
-    });
-    document.documentElement.setAttribute('lang', lang);
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n');
-      const value = translations[lang] && translations[lang][key];
-      if (value) {
-        el.innerHTML = value;
-      }
-    });
-  }
-  buttons.forEach(btn => {
+  document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.addEventListener('click', () => applyLang(btn.dataset.lang));
   });
   applyLang(currentLang);
