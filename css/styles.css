@@ -147,6 +147,7 @@ nav a.active {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 8px;
   background-color: var(--primary-grey);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -159,10 +160,11 @@ nav a.active {
 
 .card-back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   overflow: auto;
 }
 
-.card-inner:hover {
+.card:hover .card-inner {
   transform: rotateY(180deg);
 }
 
