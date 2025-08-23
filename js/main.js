@@ -42,6 +42,9 @@ const translations = {
     vacancy_qa_title: 'Инженер по качеству (QA)',
     vacancy_qa_desc: 'Обеспечение качества нашего оборудования и ПО. Знание инструментов автоматизированного тестирования — плюс.',
     vacancy_apply: 'Откликнуться',
+    warranty_title: 'Гарантия и сервис',
+    warranty_p1: 'Мы уверены в нашей продукции. Помимо горячей линии и онлайн‑чата, OSiO открывает специализированный сервисный центр в самом сердце Аддис‑Абебы. Новый офис будет располагаться в здании Medhane Alem и обеспечит круглосуточную поддержку и ремонт всех устройств OSiO.',
+    warranty_p2: 'По вопросам гарантии сначала свяжитесь с нами через Telegram или электронную почту. Мы поможем с диагностикой и при необходимости организуем ремонт или замену.',
   },
   en: {
     nav_home: "Home",
@@ -85,6 +88,9 @@ const translations = {
     vacancy_qa_title: "QA Engineer",
     vacancy_qa_desc: "Ensure the quality of our hardware and software. Knowledge of automated testing tools is a plus.",
     vacancy_apply: "Apply",
+    warranty_title: "Warranty & Service",
+    warranty_p1: "We stand behind our products. In addition to our hotline and online chat, OSiO is opening a dedicated service center in the heart of Addis Ababa. The new office will be located at Medhane Alem Building and will offer 24/7 support and repair services for all OSiO devices.",
+    warranty_p2: "For any warranty claims, please contact us first via Telegram or email. We will assist you with troubleshooting and arrange repair or replacement if necessary.",
   },
   am: {
     nav_home: "መግቢያ",
@@ -128,6 +134,9 @@ const translations = {
     vacancy_qa_title: "QA ኢንጅነር",
     vacancy_qa_desc: "የሃርድዌር እና ሶፍትዌሩን ጥራት ይጠብቁ። የተሰማሩ የማተሚያ መሣሪያዎች እውቀት ተጨማሪ ጥቅም ነው።",
     vacancy_apply: "ይመልሱ",
+    warranty_title: "ዋስትና እና አገልግሎት",
+    warranty_p1: "ምርቶቻችንን እናምናለን። ከሞተላይንና ከመስመር ላይ ውይይት በተጨማሪ፣ OSiO በአዲስ አበባ ልብ ውስጥ ልዩ አገልግሎት ማዕከል ትከፍታለች። አዲሱ ቢሮ በ Medhane Alem Building ውስጥ ይገኛል እና ለሁሉም OSiO መሣሪያዎች 24/7 ድጋፍና ጥገና አገልግሎት ይሰጣል።",
+    warranty_p2: "ለማንኛውም ዋስትና ጥያቄ እባክዎን መጀመርያ በ Telegram ወይም በኢሜይል ይያዙን። ችግኝ ማስወገድ እና እንዲያስፈልግ ጥገና ወይም ቀይር እንደሚያደርጉ እናግዛዎታለን።",
 
     // FAQ translations (Russian)
     faq_q1: "Windows выдаёт ошибку активации лицензии. Что делать?",
