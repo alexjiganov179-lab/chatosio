@@ -108,22 +108,26 @@ nav a.active {
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
   gap: 1.5rem;
-  justify-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
   .card-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .card {
   perspective: 1000px;
-  width: 100%;
+  width: 300px;
   min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card-inner {
@@ -156,7 +160,7 @@ nav a.active {
   overflow: auto;
 }
 
-.card:hover .card-inner {
+.card-inner:hover {
   transform: rotateY(180deg);
 }
 
@@ -199,6 +203,11 @@ nav a.active {
 .button-buy {
   background-color: var(--primary-green);
   color: var(--primary-white);
+  transition: background 0.3s ease;
+}
+
+.button-buy:hover {
+  background: linear-gradient(45deg, var(--primary-green), var(--accent-blue));
 }
 
 .modal {
