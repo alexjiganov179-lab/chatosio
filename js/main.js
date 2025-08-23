@@ -68,7 +68,7 @@ const translations = {
     baseline_desc: "የስራ እና ትምህርት የታመነ አጋዥ",
     baseline_price: "50,000 ETB",
     focus_title: "FocusLine",
-    focus_desc: "ስድስት ላፖት ለቢሮ እና ቤት",
+    focus_desc: "ጌጣጌጥ ላፕቶፕ ለቢሮ እና ቤት",
     focus_price: "40,333 ETB",
     cyber_title: "CyberLine",
     cyber_desc: "ለጨዋታዎች እና ለስራዎች ብልህ መሳሪያ",
