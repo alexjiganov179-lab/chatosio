@@ -121,7 +121,6 @@ nav a.active {
   }
 }
 
-/* Flip‑card layout */
 .card {
   perspective: 1000px;
   -webkit-perspective: 1000px;
