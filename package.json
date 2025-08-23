@@ -1,0 +1,11 @@
+{
+  "name": "osio-site",
+  "version": "1.0.0",
+  "description": "Static website for OSiO laptops with Chapa integration",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "start": "" 
+  },
+  "dependencies": {}
+}
