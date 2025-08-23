@@ -199,6 +199,66 @@ footer {
   padding: 1rem;
 }
 
+/* Vacancies grid */
+.vacancies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.vacancy-card {
+  background-color: var(--primary-grey);
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vacancy-card:hover,
+.vacancy-card:focus-within {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.vacancy-card h3 {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.vacancy-card .icon {
+  margin-right: 0.5rem;
+}
+
+.apply-button {
+  align-self: flex-start;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-green);
+  color: var(--primary-white);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.apply-button:hover,
+.apply-button:focus {
+  background-color: var(--primary-black);
+  outline: 2px solid var(--primary-yellow);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .vacancies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* FAQ accordion styles */
 .faq-item {
   margin-bottom: 1rem;
