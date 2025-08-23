@@ -26,6 +26,22 @@ const translations = {
     crypto_contact: "Оплата криптовалютой через Telegram:",
     shipping_title: "Доставка и самовывоз",
     shipping_desc: "Мы доставляем по всей стране курьером. Также вы можете забрать заказ в нашем сервисном центре в Аддис‑Абебе.",
+    vacancies_page_title: "Вакансии – OSiO",
+    vacancies_title: "Вакансии",
+    vacancies_intro: ' Присоединяйтесь к нашей растущей команде! Мы ищем мотивированных специалистов, готовых строить будущее технологий вместе с нами. Присылайте резюме и краткий рассказ о себе на <a href="mailto:hr@osio.ru">hr@osio.ru</a>.',
+    vacancy_support_title: 'Оператор онлайн‑поддержки (удалённо)',
+    vacancy_support_desc: 'Помогайте нашим клиентам через чат и социальные сети. Важны хорошие коммуникативные навыки и эмпатия.',
+    vacancy_smm_title: 'SMM‑специалист',
+    vacancy_smm_desc: 'Создавайте и ведите контент для наших социальных сетей. Преимуществом будет опыт с локальными эфиопскими платформами.',
+    vacancy_frontend_title: 'Младший фронтенд‑разработчик',
+    vacancy_frontend_desc: 'Работайте с HTML, CSS и JavaScript для создания интерфейсов. Опыт адаптивной вёрстки и базовые знания Node.js приветствуются.',
+    vacancy_backend_title: 'Младший бэкенд‑разработчик',
+    vacancy_backend_desc: 'Помощь в разработке наших серверлесс-функций и интеграции с платёжными системами. Знакомство с Node.js и REST API.',
+    vacancy_fullstack_title: 'Мидл фулстек‑разработчик',
+    vacancy_fullstack_desc: 'Ответственность за фронтенд и бэкенд. Навыки в JavaScript/Node.js и стремление к чистому коду.',
+    vacancy_qa_title: 'Инженер по качеству (QA)',
+    vacancy_qa_desc: 'Обеспечение качества нашего оборудования и ПО. Знание инструментов автоматизированного тестирования — плюс.',
+    vacancy_apply: 'Откликнуться',
   },
   en: {
     nav_home: "Home",
@@ -80,6 +96,22 @@ const translations = {
     crypto_contact: "በ ቴሌግራም ስልክ ክሪፕቶ መክፈያ:",
     shipping_title: "ማስተላለፊያ እና ዝርግ ማድረሻ",
     shipping_desc: "እኛ በአገር ውስጥ ሁሉ ኮሩያር እንደማድረስ እንለዋለን። እንዲሁም ትዕዛዛችሁን ከአዲስ አበባ አገልግሎት ማዕከላችን መውሰድ ይችላሉ።",
+    vacancies_page_title: "ስራዎች – OSiO",
+    vacancies_title: "ስራዎች",
+    vacancies_intro: 'የሚያድግ ቡድናችንን ይቀላቀሉ! ከእኛ ጋር የቴክኖሎጂ ወደፊትን ለመገንባት ዝናብ ያላቸውን ግልጋሎት ሰዎችን እንፈልጋለን። ሪዙሜዎን እና አጭር መግለጫዎን ወደ <a href="mailto:hr@osio.ru">hr@osio.ru</a> ይላኩ።',
+    vacancy_support_title: "የመስመር ላይ ድጋፍ ባለሙያ (ርቀት)",
+    vacancy_support_desc: "በቻት እና በማህበራዊ ሚዲያ ደንበኞቻችንን ይረዱ። ጥሩ የግንኙነት ችሎታ እና ርኅራኄ አስፈላጊ ናቸው።",
+    vacancy_smm_title: "SMM ባለሙያ",
+    vacancy_smm_desc: "ለማህበራዊ መድረኮቻችን ይዘት ይፍጠሩ እና ይቆጣጠሩ። በኢትዮጵያ የአካባቢ መድረኮች ልምድ መኖሩ ተጨማሪ ጥቅም ነው።",
+    vacancy_frontend_title: "ጂዮኒየር ፊት-እንድ ዲቨሎፐር",
+    vacancy_frontend_desc: "HTML፣ CSS እና JavaScript በመጠቀም በተገምጋሚ ቅጥ ስራ ይሰሩ። የተስማሚ ዲዛይን ልምድ እና Node.js መለያየት ይጠቅማል።",
+    vacancy_backend_title: "ጂዮኒየር በኋላ ዲቨሎፐር",
+    vacancy_backend_desc: "ሰርቨርሌስ ተግባሮቻችንን እና ከመክፈያ ስርዓቶች ጋር የመዋቀር ስራ ይረዱ። ከ Node.js እና REST API ጋር መለያየት ይወስዳል።",
+    vacancy_fullstack_title: "ሚድል ፉል-ስታክ ዲቨሎፐር",
+    vacancy_fullstack_desc: "ፊት-እንድ እና በኋላ ስራዎችን ይወስዱ። በ JavaScript/Node.js ክህሎት እና በንፁህ ኮድ ፍላጎት ይፈልጋሉ።",
+    vacancy_qa_title: "QA ኢንጅነር",
+    vacancy_qa_desc: "የሃርድዌር እና ሶፍትዌሩን ጥራት ይጠብቁ። የተሰማሩ የማተሚያ መሣሪያዎች እውቀት ተጨማሪ ጥቅም ነው።",
+    vacancy_apply: "ይመልሱ",
 
     // FAQ translations (Russian)
     faq_q1: "Windows выдаёт ошибку активации лицензии. Что делать?",
@@ -236,11 +268,12 @@ Object.assign(translations.am, {
     buttons.forEach(btn => {
       btn.classList.toggle('active', btn.dataset.lang === lang);
     });
+    document.documentElement.setAttribute('lang', lang);
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       const value = translations[lang] && translations[lang][key];
       if (value) {
-        el.textContent = value;
+        el.innerHTML = value;
       }
     });
   }
