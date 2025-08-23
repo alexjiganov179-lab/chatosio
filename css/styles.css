@@ -260,44 +260,68 @@ footer {
 }
 
 /* FAQ accordion styles */
-.faq-item {
-  margin-bottom: 1rem;
+.faq-layout {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  padding: 2rem 1rem;
 }
 
-/* Style for the question button. Use a neutral background and align content left. */
+.faq-heading {
+  flex: 0 0 30%;
+}
+
+.faq-heading h3 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.faq-content {
+  flex: 1;
+}
+
+.faq-item {
+  margin: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Style for the question button */
 .faq-question {
   width: 100%;
-  background-color: var(--primary-grey);
+  background: none;
   border: none;
   text-align: left;
-  padding: 0.75rem 1rem;
+  padding: 1rem 2rem 1rem 0;
   font-size: 1rem;
   cursor: pointer;
   position: relative;
+  color: var(--primary-white);
 }
 
-/* Add a plus/minus indicator to the question. */
+/* Add a plus/minus indicator to the question */
 .faq-question::after {
   content: '+';
   position: absolute;
-  right: 1rem;
+  right: 0;
+  color: var(--primary-white);
 }
 
-/* When expanded, change the indicator to a minus. */
+/* When expanded, change the indicator to a minus */
 .faq-question[aria-expanded="true"]::after {
   content: '−';
 }
 
-/* Answer section hidden by default. Use pre-line to preserve line breaks. */
+/* Answer section hidden by default. Use pre-line to preserve line breaks */
 .faq-answer {
   display: none;
-  padding: 0.5rem 1rem;
-  background-color: var(--primary-white);
-  border-left: 4px solid var(--primary-yellow);
+  padding: 1rem 0;
+  color: var(--primary-white);
   white-space: pre-line;
 }
 
-/* When toggled, show answer. */
+/* When toggled, show answer */
 .faq-answer.open {
   display: block;
 }

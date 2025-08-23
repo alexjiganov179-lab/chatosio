@@ -45,6 +45,7 @@ const translations = {
     warranty_title: 'Гарантия и сервис',
     warranty_p1: 'Мы уверены в нашей продукции. Помимо горячей линии и онлайн‑чата, OSiO открывает специализированный сервисный центр в самом сердце Аддис‑Абебы. Новый офис будет располагаться в здании Medhane Alem и обеспечит круглосуточную поддержку и ремонт всех устройств OSiO.',
     warranty_p2: 'По вопросам гарантии сначала свяжитесь с нами через Telegram или электронную почту. Мы поможем с диагностикой и при необходимости организуем ремонт или замену.',
+    faq_heading: 'Часто задаваемые вопросы',
   },
   en: {
     nav_home: "Home",
@@ -91,6 +92,7 @@ const translations = {
     warranty_title: "Warranty & Service",
     warranty_p1: "We stand behind our products. In addition to our hotline and online chat, OSiO is opening a dedicated service center in the heart of Addis Ababa. The new office will be located at Medhane Alem Building and will offer 24/7 support and repair services for all OSiO devices.",
     warranty_p2: "For any warranty claims, please contact us first via Telegram or email. We will assist you with troubleshooting and arrange repair or replacement if necessary.",
+    faq_heading: "Frequently Asked Questions",
   },
   am: {
     nav_home: "መግቢያ",
@@ -137,6 +139,7 @@ const translations = {
     warranty_title: "ዋስትና እና አገልግሎት",
     warranty_p1: "ምርቶቻችንን እናምናለን። ከሞተላይንና ከመስመር ላይ ውይይት በተጨማሪ፣ OSiO በአዲስ አበባ ልብ ውስጥ ልዩ አገልግሎት ማዕከል ትከፍታለች። አዲሱ ቢሮ በ Medhane Alem Building ውስጥ ይገኛል እና ለሁሉም OSiO መሣሪያዎች 24/7 ድጋፍና ጥገና አገልግሎት ይሰጣል።",
     warranty_p2: "ለማንኛውም ዋስትና ጥያቄ እባክዎን መጀመርያ በ Telegram ወይም በኢሜይል ይያዙን። ችግኝ ማስወገድ እና እንዲያስፈልግ ጥገና ወይም ቀይር እንደሚያደርጉ እናግዛዎታለን።",
+    faq_heading: "ተደጋጋሚ ጥያቄዎች",
 
     // FAQ translations (Russian)
     faq_q1: "Windows выдаёт ошибку активации лицензии. Что делать?",
