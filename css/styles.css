@@ -15,9 +15,17 @@ body {
   /* Use modern sans-serif fonts. Inter and Roboto are widely supported and
      provide a clean look. Fallback to generic sans-serif if unavailable. */
   font-family: 'Inter', 'Roboto', sans-serif;
-  background-color: var(--primary-white);
+  background: linear-gradient(-45deg, var(--primary-yellow), var(--accent-blue), var(--primary-green), var(--primary-red));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: var(--primary-black);
   line-height: 1.6;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 header {
@@ -84,10 +92,28 @@ nav a.active {
 }
 
 .hero {
+  position: relative;
+  overflow: hidden;
   text-align: center;
   padding: 3rem 1rem;
-  background-color: var(--primary-yellow);
-  color: var(--primary-black);
+  color: var(--primary-white);
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease forwards;
 }
 
 .hero h1 {
@@ -97,8 +123,23 @@ nav a.active {
 
 .hero p {
   font-size: 1.1rem;
-  max-width: 800px;
   margin: 0 auto;
+}
+
+.hero-gif {
+  width: 120px;
+  margin-top: 1rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section {
@@ -123,7 +164,14 @@ nav a.active {
   flex-direction: column;
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
 }
+
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.4s; }
+.card:nth-child(3) { animation-delay: 0.6s; }
 
 .card h2, .card h3 {
   margin-top: 0;
