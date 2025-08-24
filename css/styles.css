@@ -439,6 +439,11 @@ footer {
   box-shadow: 6px 6px 0 var(--primary-black);
   transform: rotate(var(--angle));
   background: var(--primary-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .buy-card:nth-child(1) {
@@ -456,6 +461,20 @@ footer {
   --angle: -3deg;
   background: var(--primary-green);
   color: var(--primary-white);
+}
+
+.buy-card .buy-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.buy-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buy-card a:hover {
+  text-decoration: underline;
 }
 
 .buy-info {
