@@ -416,3 +416,83 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Creative buy section */
+.buy-section {
+  margin-top: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.buy-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buy-card {
+  width: 220px;
+  padding: 1rem;
+  border: 2px solid var(--primary-black);
+  box-shadow: 6px 6px 0 var(--primary-black);
+  transform: rotate(var(--angle));
+  background: var(--primary-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buy-card:nth-child(1) {
+  --angle: -6deg;
+  background: var(--accent-yellow);
+}
+
+.buy-card:nth-child(2) {
+  --angle: 4deg;
+  background: var(--accent-blue);
+  color: var(--primary-white);
+}
+
+.buy-card:nth-child(3) {
+  --angle: -3deg;
+  background: var(--primary-green);
+  color: var(--primary-white);
+}
+
+.buy-card .buy-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.buy-card a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buy-card a:hover {
+  text-decoration: underline;
+}
+
+.buy-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.buy-info > div {
+  flex: 1 1 300px;
+  padding: 1rem 1.5rem;
+  background: var(--primary-black);
+  color: var(--primary-white);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+.buy-info a {
+  color: var(--accent-yellow);
+}
