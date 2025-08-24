@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div id="preloader">
+    <img src="webm/Good_Morning_Coffee.gif" alt="Loading animation" class="preloader-gif">
+    <div id="preloader-progress">0%</div>
+  </div>
+
   <div id="header-placeholder"></div>
 
   <!-- Hero section -->
@@ -114,10 +119,8 @@
       <div class="buy-card">
         <img src="img/icons/bitcoin.svg" alt="Bitcoin" class="buy-icon">
         <h3><a href="https://t.me/zhiganovsasha" target="_blank">@zhiganovsasha</a></h3>
-        <p data-i18n="crypto_contact">Pay with cryptocurrency</p>
-      </div>
-    </div>
-
+        <p data-i18n="crypto_contact">Pay with cryptocurrency</p      </div>
+  /
     <div class="buy-info">
       <div class="shipping-box">
         <h3 data-i18n="shipping_title">Delivery & Pickup</h3>
@@ -130,5 +133,25 @@
 
   <script src="js/include.js"></script>
   <script src="js/main.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const preloader = document.getElementById('preloader');
+      const progressText = document.getElementById('preloader-progress');
+      let progress = 0;
+      const duration = 3000; // 3 seconds
+      const intervalTime = 30; // update every 30ms
+      const increment = 100 / (duration / intervalTime);
+      const interval = setInterval(() => {
+        progress += increment;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          preloader.style.display = 'none';
+        }
+        progressText.textContent = Math.floor(progress) + '%';
+      }, intervalTime);
+    });
+  </script>
+
 </body>
 </html>
