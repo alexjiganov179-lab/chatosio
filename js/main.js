@@ -19,7 +19,6 @@ const translations = {
     cyber_title: "CyberLine",
     cyber_desc: "Мощный ноутбук для игр и монтажа",
     cyber_price: "202 000 ETB",
-    spec_button: "Характеристики",
     buy_button: "Купить",
     buy_intro: "Вы можете приобрести наши ноутбуки прямо на сайте через Chapa или у партнеров. Все цены указаны в ETB и включают курьерскую доставку или самовывоз в Аддис‑Абебе.",
     partners_title: "Партнеры и альтернативные способы покупки",
@@ -94,7 +93,6 @@ const translations = {
     cyber_title: "CyberLine",
     cyber_desc: "Powerful device for games & editing",
     cyber_price: "202,000 ETB",
-    spec_button: "Specs",
     buy_button: "Buy",
     buy_intro: "You can purchase our laptops directly through our website using Chapa, or via our partners. All prices are in ETB and include courier delivery or self‑pickup in Addis Ababa.",
     partners_title: "Partners & Alternative Purchasing",
@@ -169,7 +167,6 @@ const translations = {
     cyber_title: "CyberLine",
     cyber_desc: "ለጨዋታዎች እና ለስራዎች ብልህ መሳሪያ",
     cyber_price: "202,000 ETB",
-    spec_button: "ዝርዝሮች",
     buy_button: "መግዛት",
     buy_intro: "ላፖቶቻችንን በ Chapa በመጠቀም በእኛ ድር ገጽ ቀጥታ ወይም በጓደኞቻችን መግዛት ይችላሉ። ሁሉም ዋጋዎች በ ETB ይሰጣሉ፣ እና በአዲስ አበባ በኩርያ መድረስ ወይም በተጠቃሚው ራስ መውሰድ ያካትታሉ።",
     partners_title: "አጋር ሾለት እና የተለያዩ የግዢ አማራጮች",
@@ -403,21 +400,6 @@ document.addEventListener('partialsLoaded', () => {
     }
   });
 });
-
-// Modal functions
-function showModal(id) {
-  const modal = document.getElementById('modal-' + id);
-  if (modal) {
-    modal.style.display = 'flex';
-  }
-}
-
-function closeModal(id) {
-  const modal = document.getElementById('modal-' + id);
-  if (modal) {
-    modal.style.display = 'none';
-  }
-}
 
 // Payment integration using Chapa test keys via API route
 async function buyProduct(product) {
