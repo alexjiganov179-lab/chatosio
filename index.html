@@ -11,14 +11,21 @@
 
   <!-- Hero section -->
   <section class="hero">
-    <h1 data-i18n="hero_title">It's a match</h1>
-    <p data-i18n="hero_subtitle">You bring the delicious coffee. We bring the high‑end laptops. At OSiO, we believe great work starts with the right energy — and the right tools.</p>
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1 class="fade-in" data-i18n="hero_title">It's a match</h1>
+      <p class="fade-in delay-1" data-i18n="hero_subtitle">You bring the delicious coffee. We bring the high‑end laptops. At OSiO, we believe great work starts with the right energy — and the right tools.</p>
+      <img src="https://media.giphy.com/media/tJ4n0yWz1HEQbnuanS/giphy.gif" alt="Animated coffee cup" class="hero-gif">
+    </div>
   </section>
 
   <!-- Product cards -->
   <section class="section">
     <div class="card-container">
       <div class="card" id="card-baseline">
+        <img src="img/baseline1.png" alt="BaseLine laptop" class="card-image">
         <h2 data-i18n="baseline_title">BaseLine</h2>
         <p data-i18n="baseline_desc">Trusted helper for work & study</p>
         <p class="price" data-i18n="baseline_price">50,000 ETB</p>
@@ -26,6 +33,7 @@
         <button class="button-buy" onclick="buyProduct('BaseLine')" data-i18n="buy_button">Buy</button>
       </div>
       <div class="card" id="card-focusline">
+        <img src="img/focusline1.png" alt="FocusLine laptop" class="card-image">
         <h2 data-i18n="focus_title">FocusLine</h2>
         <p data-i18n="focus_desc">Stylish laptop for office & home</p>
         <p class="price" data-i18n="focus_price">40,333 ETB</p>
@@ -33,6 +41,7 @@
         <button class="button-buy" onclick="buyProduct('FocusLine')" data-i18n="buy_button">Buy</button>
       </div>
       <div class="card" id="card-cyberline">
+        <img src="img/cyberline1.png" alt="CyberLine laptop" class="card-image">
         <h2 data-i18n="cyber_title">CyberLine</h2>
         <p data-i18n="cyber_desc">Powerful device for games & editing</p>
         <p class="price" data-i18n="cyber_price">202,000 ETB</p>
