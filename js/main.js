@@ -385,6 +385,26 @@ function applyLang(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
   applyLang(currentLang);
+
+  const preloader = document.getElementById('preloader');
+  const percentEl = document.getElementById('loader-percent');
+  let percent = 0;
+  const interval = setInterval(() => {
+    percent++;
+    if (percentEl) {
+      percentEl.textContent = percent + '%';
+    }
+    if (percent >= 100) {
+      clearInterval(interval);
+    }
+  }, 30);
+
+  setTimeout(() => {
+    clearInterval(interval);
+    if (preloader) {
+      preloader.classList.add('hidden');
+    }
+  }, 3000);
 });
 
 document.addEventListener('partialsLoaded', () => {
