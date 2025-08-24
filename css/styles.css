@@ -416,3 +416,37 @@ footer {
     transform: translateY(0);
   }
 }
+
+/* Preloader overlay */
+#preloader {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-white);
+  z-index: 2000;
+}
+
+#preloader video {
+  width: 200px;
+  height: auto;
+}
+
+#preloader .percent {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #4a2f1b;
+}
+
+#preloader.fadeout {
+  animation: preloaderFadeout 0.5s forwards;
+}
+
+@keyframes preloaderFadeout {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
