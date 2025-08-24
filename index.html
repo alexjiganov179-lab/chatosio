@@ -11,87 +11,52 @@
 
   <!-- Hero section -->
   <section class="hero">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
-    </video>
     <div class="hero-content">
-      <h1 class="fade-in" data-i18n="hero_title">It's a match</h1>
-      <p class="fade-in delay-1" data-i18n="hero_subtitle">You bring the delicious coffee. We bring the high‑end laptops. At OSiO, we believe great work starts with the right energy — and the right tools.</p>
-      <img src="https://media.giphy.com/media/tJ4n0yWz1HEQbnuanS/giphy.gif" alt="Animated coffee cup" class="hero-gif">
+      <h1 data-i18n="hero_title">Elevate your workflow</h1>
+      <p data-i18n="hero_subtitle">Modern devices crafted for your next big idea</p>
+      <a href="#products" class="cta-button" data-i18n="hero_cta">Shop now</a>
     </div>
   </section>
 
-  <!-- Product cards -->
-  <section class="section">
-    <div class="card-container">
-      <div class="card" id="card-baseline">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/baseline1.png" alt="BaseLine laptop" class="card-image">
-            <h2 data-i18n="baseline_title">BaseLine</h2>
-            <p data-i18n="baseline_desc">Trusted helper for work & study</p>
-            <p class="price" data-i18n="baseline_price">50,000 ETB</p>
-          </div>
-          <div class="card-back">
-            <ul class="specs">
-              <li>Display: 15.6" FHD (1920×1080) IPS</li>
-              <li>Processor: Intel N100</li>
-              <li>Memory: 8 GB DDR4</li>
-              <li>Storage: 256 GB SSD</li>
-              <li>Graphics: Integrated Intel UHD</li>
-              <li>Battery: 5000 mAh</li>
-              <li>Ports: RJ45, HDMI, USB 2.0 ×1, USB 3.0 ×2, USB-C</li>
-              <li>Special: Webcam with privacy shutter; upgrade without voiding warranty</li>
-            </ul>
-          </div>
-        </div>
+  <!-- Products -->
+  <section id="products" class="products">
+    <h2 data-i18n="products_title">Laptops for every task</h2>
+    <div class="product-grid">
+      <article class="product-card">
+        <div class="image-placeholder" role="img" aria-label="BaseLine laptop">Image</div>
+        <h3 data-i18n="baseline_title">BaseLine</h3>
+        <p data-i18n="baseline_desc">Trusted helper for work & study</p>
+        <p class="price" data-i18n="baseline_price">50,000 ETB</p>
         <button class="button-buy" onclick="buyProduct('BaseLine')" data-i18n="buy_button">Buy</button>
-      </div>
-      <div class="card" id="card-focusline">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/focusline1.png" alt="FocusLine laptop" class="card-image">
-            <h2 data-i18n="focus_title">FocusLine</h2>
-            <p data-i18n="focus_desc">Stylish laptop for office & home</p>
-            <p class="price" data-i18n="focus_price">40,333 ETB</p>
-          </div>
-          <div class="card-back">
-            <ul class="specs">
-              <li>Display: 16.1" FHD (1920×1080) IPS</li>
-              <li>Processor: Intel Core i3‑1115G4, 2 cores (up to 4.1 GHz)</li>
-              <li>Memory: 8 GB DDR4</li>
-              <li>Storage: 512 GB SSD</li>
-              <li>Graphics: Intel UHD</li>
-              <li>Operating system: No OS preinstalled</li>
-              <li>Weight: 1.77 kg</li>
-              <li>Special: Upgrade components without voiding warranty</li>
-            </ul>
-          </div>
-        </div>
+      </article>
+      <article class="product-card">
+        <div class="image-placeholder" role="img" aria-label="FocusLine laptop">Image</div>
+        <h3 data-i18n="focus_title">FocusLine</h3>
+        <p data-i18n="focus_desc">Stylish laptop for office & home</p>
+        <p class="price" data-i18n="focus_price">40,333 ETB</p>
         <button class="button-buy" onclick="buyProduct('FocusLine')" data-i18n="buy_button">Buy</button>
-      </div>
-      <div class="card" id="card-cyberline">
-        <div class="card-inner">
-          <div class="card-front">
-            <img src="img/cyberline1.png" alt="CyberLine laptop" class="card-image">
-            <h2 data-i18n="cyber_title">CyberLine</h2>
-            <p data-i18n="cyber_desc">Powerful device for games & editing</p>
-            <p class="price" data-i18n="cyber_price">202,000 ETB</p>
-          </div>
-          <div class="card-back">
-            <ul class="specs">
-              <li>Display: 17.3" FHD (1920×1080) IPS</li>
-              <li>Processor: Intel Core i7 (gaming‑class)</li>
-              <li>Memory: 16 GB DDR4</li>
-              <li>Storage: 1 TB SSD</li>
-              <li>Graphics: Dedicated NVIDIA GPU</li>
-              <li>Operating system: No OS preinstalled</li>
-              <li>Special: Designed for gaming and creative work</li>
-            </ul>
-          </div>
-        </div>
+      </article>
+      <article class="product-card">
+        <div class="image-placeholder" role="img" aria-label="CyberLine laptop">Image</div>
+        <h3 data-i18n="cyber_title">CyberLine</h3>
+        <p data-i18n="cyber_desc">Powerful device for games & editing</p>
+        <p class="price" data-i18n="cyber_price">202,000 ETB</p>
         <button class="button-buy" onclick="buyProduct('CyberLine')" data-i18n="buy_button">Buy</button>
-      </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature">
+      <div class="icon-placeholder" aria-hidden="true">⬆️</div>
+      <h3 data-i18n="feature_upgrade_title">Upgrade friendly</h3>
+      <p data-i18n="feature_upgrade_desc">Replace parts without losing warranty.</p>
+    </div>
+    <div class="feature">
+      <div class="icon-placeholder" aria-hidden="true">💬</div>
+      <h3 data-i18n="feature_support_title">24/7 support</h3>
+      <p data-i18n="feature_support_desc">Always here to help.</p>
     </div>
   </section>
 
