@@ -84,57 +84,113 @@ nav a.active {
 }
 
 .hero {
-  position: relative;
-  text-align: center;
-  padding: 3rem 1rem;
-  color: var(--primary-white);
-  overflow: hidden;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(-45deg, var(--primary-yellow), var(--accent-blue), var(--primary-red), var(--primary-green));
-  background-size: 400% 400%;
-  animation: gradientShift 20s ease infinite;
-  opacity: 0.6;
-  z-index: 0;
-}
-
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4rem 5%;
+  background-color: var(--primary-grey);
+  color: var(--primary-black);
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
+  max-width: 600px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--primary-white);
+  border: 1px solid #ddd;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
 }
 
 .hero p {
   font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
-.hero-gif {
-  width: 120px;
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
   margin-top: 1rem;
-  border-radius: 8px;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--primary-yellow);
+  color: var(--primary-black);
+}
+
+.btn-secondary {
+  border: 2px solid var(--primary-black);
+  color: var(--primary-black);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.hero-stats div {
+  text-align: left;
+}
+
+.hero-stats div strong {
+  font-size: 1.5rem;
+}
+
+.hero-stats div span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hero-media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-media video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: none;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-media {
+    width: 100%;
+  }
 }
 
 .fade-in {
