@@ -409,9 +409,9 @@ document.addEventListener('partialsLoaded', () => {
 
 // Open Chapa checkout links inside a darkened popup overlay
 const checkoutLinks = {
-  BaseLine: "http://checkout.chapa.co/checkout/web/payment/PL-S719TpsZ4WPy",
-  FocusLine: "http://checkout.chapa.co/checkout/web/payment/PL-52hYW0bOFVCu",
-  CyberLine: "http://checkout.chapa.co/checkout/web/payment/PL-bEbrRRqTcFng"
+  BaseLine: "https://checkout.chapa.co/checkout/web/payment/PL-S719TpsZ4WPy",
+  FocusLine: "https://checkout.chapa.co/checkout/web/payment/PL-52hYW0bOFVCu",
+  CyberLine: "https://checkout.chapa.co/checkout/web/payment/PL-bEbrRRqTcFng"
 };
 
 function buyProduct(product) {
