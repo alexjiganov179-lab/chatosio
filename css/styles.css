@@ -524,3 +524,43 @@ footer {
   color: var(--primary-black);
   font-weight: bold;
 }
+
+/* Checkout popup styles */
+.checkout-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.checkout-popup {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: 90%;
+  background: var(--primary-white);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.checkout-popup iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.checkout-close {
+  position: absolute;
+  top: 0.25rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: var(--primary-black);
+  cursor: pointer;
+}

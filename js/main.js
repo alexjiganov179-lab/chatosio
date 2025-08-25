@@ -407,29 +407,38 @@ document.addEventListener('partialsLoaded', () => {
   });
 });
 
-// Payment integration using Chapa test keys via API route
-async function buyProduct(product) {
-  const email = prompt('Enter your email:');
-  const firstName = prompt('First name:');
-  const lastName = prompt('Last name:');
-  if (!email || !firstName) return;
-  const amounts = { 'BaseLine': 50000, 'FocusLine': 40333, 'CyberLine': 202000 };
-  const amount = amounts[product] || 0;
-  try {
-    const response = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ amount: amount.toString(), email, first_name: firstName, last_name: lastName })
-    });
-    const data = await response.json();
-    if (data && data.data && data.data.checkout_url) {
-      window.location.href = data.data.checkout_url;
-    } else {
-      alert('Payment initialization failed');
+// Open Chapa checkout links inside a darkened popup overlay
+const checkoutLinks = {
+  BaseLine: "http://checkout.chapa.co/checkout/web/payment/PL-S719TpsZ4WPy",
+  FocusLine: "http://checkout.chapa.co/checkout/web/payment/PL-52hYW0bOFVCu",
+  CyberLine: "http://checkout.chapa.co/checkout/web/payment/PL-bEbrRRqTcFng"
+};
+
+function buyProduct(product) {
+  const url = checkoutLinks[product];
+  if (!url) return;
+
+  const overlay = document.createElement('div');
+  overlay.className = 'checkout-overlay';
+  overlay.innerHTML = `
+    <div class="checkout-popup">
+      <button class="checkout-close">&times;</button>
+      <iframe src="${url}" frameborder="0"></iframe>
+    </div>`;
+
+  document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
+
+  const close = () => {
+    overlay.remove();
+    document.body.style.overflow = '';
+  };
+
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay || e.target.classList.contains('checkout-close')) {
+      close();
     }
-  } catch (err) {
-    alert('Error: ' + err.message);
-  }
+  });
 }
 
 // FAQ accordion toggling
