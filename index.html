@@ -137,6 +137,17 @@
     document.addEventListener('DOMContentLoaded', () => {
       const preloader = document.getElementById('preloader');
       const progressText = document.getElementById('preloader-progress');
+      const lastShown = localStorage.getItem('preloaderLastShown');
+      const now = Date.now();
+      const tenMinutes = 10 * 60 * 1000;
+
+      if (lastShown && now - parseInt(lastShown, 10) < tenMinutes) {
+        preloader.style.display = 'none';
+        return;
+      }
+
+      localStorage.setItem('preloaderLastShown', now.toString());
+
       let progress = 0;
       const duration = 3000; // 3 seconds
       const intervalTime = 30; // update every 30ms
