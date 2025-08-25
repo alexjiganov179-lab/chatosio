@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="preloader">
+    <div id="preloader" style="display: none;">
     <img src="webm/Good_Morning_Coffee.gif" alt="Loading animation" class="preloader-gif">
     <div id="preloader-progress">0%</div>
   </div>
@@ -137,19 +137,28 @@
     document.addEventListener('DOMContentLoaded', () => {
       const preloader = document.getElementById('preloader');
       const progressText = document.getElementById('preloader-progress');
-      let progress = 0;
-      const duration = 3000; // 3 seconds
-      const intervalTime = 30; // update every 30ms
-      const increment = 100 / (duration / intervalTime);
-      const interval = setInterval(() => {
-        progress += increment;
-        if (progress >= 100) {
-          progress = 100;
-          clearInterval(interval);
-          preloader.style.display = 'none';
-        }
-        progressText.textContent = Math.floor(progress) + '%';
-      }, intervalTime);
+      const lastShown = parseInt(localStorage.getItem('preloaderLastShown') || '0', 10);
+      const tenMinutes = 10 * 60 * 1000;
+
+      if (!lastShown || Date.now() - lastShown > tenMinutes) {
+        preloader.style.display = 'flex';
+        let progress = 0;
+        const duration = 3000; // 3 seconds
+        const intervalTime = 30; // update every 30ms
+        const increment = 100 / (duration / intervalTime);
+        const interval = setInterval(() => {
+          progress += increment;
+          if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+            preloader.style.display = 'none';
+            localStorage.setItem('preloaderLastShown', Date.now().toString());
+          }
+          progressText.textContent = Math.floor(progress) + '%';
+        }, intervalTime);
+      } else {
+        preloader.style.display = 'none';
+      }
     });
   </script>
 
