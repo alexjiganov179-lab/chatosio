@@ -407,29 +407,33 @@ document.addEventListener('partialsLoaded', () => {
   });
 });
 
-// Payment integration using Chapa test keys via API route
-async function buyProduct(product) {
-  const email = prompt('Enter your email:');
-  const firstName = prompt('First name:');
-  const lastName = prompt('Last name:');
-  if (!email || !firstName) return;
-  const amounts = { 'BaseLine': 50000, 'FocusLine': 40333, 'CyberLine': 202000 };
-  const amount = amounts[product] || 0;
-  try {
-    const response = await fetch('/api/checkout', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ amount: amount.toString(), email, first_name: firstName, last_name: lastName })
-    });
-    const data = await response.json();
-    if (data && data.data && data.data.checkout_url) {
-      window.location.href = data.data.checkout_url;
-    } else {
-      alert('Payment initialization failed');
-    }
-  } catch (err) {
-    alert('Error: ' + err.message);
+// Open Chapa checkout links in a popup overlay
+function buyProduct(product) {
+  const links = {
+    'BaseLine': 'http://checkout.chapa.co/checkout/web/payment/PL-S719TpsZ4WPy',
+    'FocusLine': 'http://checkout.chapa.co/checkout/web/payment/PL-52hYW0bOFVCu',
+    'CyberLine': 'http://checkout.chapa.co/checkout/web/payment/PL-bEbrRRqTcFng'
+  };
+  const url = links[product];
+  if (!url) return;
+  const overlay = document.getElementById('payment-overlay');
+  const frame = document.getElementById('payment-frame');
+  if (overlay && frame) {
+    frame.src = url;
+    overlay.classList.add('active');
   }
+}
+
+const paymentClose = document.getElementById('payment-close');
+if (paymentClose) {
+  paymentClose.addEventListener('click', () => {
+    const overlay = document.getElementById('payment-overlay');
+    const frame = document.getElementById('payment-frame');
+    if (overlay && frame) {
+      frame.src = '';
+      overlay.classList.remove('active');
+    }
+  });
 }
 
 // FAQ accordion toggling
