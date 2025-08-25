@@ -5,7 +5,9 @@
   "main": "index.html",
   "type": "module",
   "scripts": {
-    "start": "" 
+    "start": "serve ."
   },
-  "dependencies": {}
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
 }
